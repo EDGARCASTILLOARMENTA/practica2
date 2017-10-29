@@ -151,57 +151,55 @@ A[j+1]=aux;
 
   
     public static void main(String[] args) {
-        int res=0;
-        res=Integer.parseInt(JOptionPane.showInputDialog(
+        //Rebeca :)
+	char res;
+	res=character.parseChar(JOptionPane.showInputDialog(
                 "Elije una opci\u00f3n: \n;"
-                + " 1) Burbuja \n;"
-                + " 2) Insercion \n ;"
-                + "3) Seleccion \n;"
-                + " 4)Shell \n;"
-                + " 5)Quicksort\n;"
-                + " 6)monticulo \n;"));
+                + " a) Burbuja \n;"
+                + " b) Insercion \n ;"
+                + "c) Seleccion \n;"
+                + " d)Shell \n;"
+                + " e)Quicksort\n;"
+                + " f)monticulo \n;"));
         Menu objeto= new Menu();     
         
 switch(res){
-        case 1:
-        objeto.pedirTamano();
+   case 'a':
+   	objeto.pedirTamano();
         objeto.llenarArreglo();
         objeto.burbuja();
         objeto.imprime();
-break;
-case 2: 
-    objeto.pedirTamano();
-    objeto.llenarArreglo();
-    objeto.inte();
-    objeto.imprime();
-    break;
-case 3: 
-    objeto.pedirTamano();
-    objeto.llenarArreglo();
-    objeto.select();
-    objeto.imprime();
-    break;
-   case 4: 
-    objeto.pedirTamano();
-    objeto.llenarArreglo();
-    objeto.shell();
-    objeto.imprime();
-    break;
-    
-    case 5:
-                objeto.pedirTamano();
-                objeto.llenarArreglo();
-                objeto.quicksort(1,1);
-                objeto.imprime();
-                break;
-                
-                case 6:
-                objeto.pedirTamano();
-                objeto.llenarArreglo();
-                objeto.monticulo();
-                objeto.imprime();
-                break;
-
+   break;
+   case 'b': 
+        objeto.pedirTamano();
+        objeto.llenarArreglo();
+        objeto.inte();
+        objeto.imprime();
+   break;
+   case 'c': 
+        objeto.pedirTamano();
+        objeto.llenarArreglo();
+    	objeto.select();
+    	objeto.imprime();
+   break;
+   case 'd': 
+   	objeto.pedirTamano();
+    	objeto.llenarArreglo();
+    	objeto.shell();
+    	objeto.imprime();
+   break; 
+   case 'e':
+        objeto.pedirTamano();
+        objeto.llenarArreglo();
+        objeto.quicksort(1,1);
+        objeto.imprime();
+   break;              
+   case 'f':
+        objeto.pedirTamano();
+        objeto.llenarArreglo();
+        objeto.monticulo();
+        objeto.imprime();
+   break;
 default: 
     
 }
