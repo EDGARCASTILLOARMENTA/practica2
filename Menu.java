@@ -1,3 +1,4 @@
+
 package menu;
 
 import javax.swing.JOptionPane;
@@ -7,19 +8,26 @@ int n, A[],i,j, aux;
 
     void pedirTamano() 
     {
-    n=Integer.parseInt(JOptionPane.showInputDialog("Tamaño del arreglo? "));   
-    System.out.println("El tamaño del arreglo es de..... "+n);
+    n=Integer.parseInt(JOptionPane.showInputDialog("Tama\u00f1o del arrego? "));   
+    System.out.println("El tama\u00f1o del arreglo es de..... "+n);
     }
        void llenarArreglo ()
                 {
         A= new int[n];
         for(i=0; i<=n-1; i++ )
-      A[i]=Integer.parseInt(JOptionPane.showInputDialog("Dame el valor de la posicion "+(i+1)+":")); 
+      A[i]=Integer.parseInt(JOptionPane.showInputDialog("Dame el valor de la posici\u00f3n "+(i+1)+":")); 
         
          l=A.length-1;
-    }        
+    }
+               
        void burbuja()
        {
+       int i,j;
+       float n;
+       boolean flag = true;
+       while (flag)
+       {
+       flag = flase;
          for(i=1; i<n; i++)
              for(j=0; j<=n-(i+1); j++)
                  if(A[j] > A[j+1])
@@ -27,8 +35,10 @@ int n, A[],i,j, aux;
            aux=A[j];
            A[j]=A[j+1];
            A[j+1]=aux;
+           flag = true;
        }
        }
+   }
        void imprime()
        {
            String salida="";
@@ -38,7 +48,7 @@ int n, A[],i,j, aux;
            }
             
             JOptionPane.showMessageDialog(null, salida);
-               JOptionPane.showMessageDialog(null, "El esta Arreglo ordenado "+A[i]); 
+               JOptionPane.showMessageDialog(null, "El  Arreglo esta ordenado "+A[i]); 
        }
   void inte(){     
 for(i=1;i<A.length;i++){
@@ -143,13 +153,13 @@ A[j+1]=aux;
     public static void main(String[] args) {
         int res=0;
         res=Integer.parseInt(JOptionPane.showInputDialog(
-                "Elije una opcion: \n;"
-                + " a) Burbuja \n;"
-                + " b) Insercion \n ;"
-                + "c) Seleccion \n;"
-                + " d)Shell \n;"
-                + " e)Quicksort"
-                + " f)monticulo \n;"));
+                "Elije una opci\u00f3n: \n;"
+                + " 1) Burbuja \n;"
+                + " 2) Insercion \n ;"
+                + "3) Seleccion \n;"
+                + " 4)Shell \n;"
+                + " 5)Quicksort"
+                + " 6)monticulo \n;"));
         Menu objeto= new Menu();     
         
 switch(res){
