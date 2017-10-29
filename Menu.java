@@ -7,8 +7,8 @@ int n, A[],i,j, aux;
 
     void pedirTamano() 
     {
-    n=Integer.parseInt(JOptionPane.showInputDialog("TamaÃ±o del arrego? "));   
-    System.out.println("El tamaÃ±o del arreglo es de..... "+n);
+    n=Integer.parseInt(JOptionPane.showInputDialog("Tama�o del arreglo? "));   
+    System.out.println("El tama�o del arreglo es de..... "+n);
     }
        void llenarArreglo ()
                 {
@@ -17,12 +17,7 @@ int n, A[],i,j, aux;
       A[i]=Integer.parseInt(JOptionPane.showInputDialog("Dame el valor de la posicion "+(i+1)+":")); 
         
          l=A.length-1;
-    }
-       
-       
-
-            
-               
+    }        
        void burbuja()
        {
          for(i=1; i<n; i++)
@@ -149,12 +144,12 @@ A[j+1]=aux;
         int res=0;
         res=Integer.parseInt(JOptionPane.showInputDialog(
                 "Elije una opcion: \n;"
-                + " 1) Burbuja \n;"
-                + " 2) Insercion \n ;"
-                + "3) Seleccion \n;"
-                + " 4)Shell \n;"
-                + " 5)Quicksort"
-                + " 6)monticulo \n;"));
+                + " a) Burbuja \n;"
+                + " b) Insercion \n ;"
+                + "c) Seleccion \n;"
+                + " d)Shell \n;"
+                + " e)Quicksort"
+                + " f)monticulo \n;"));
         Menu objeto= new Menu();     
         
 switch(res){
