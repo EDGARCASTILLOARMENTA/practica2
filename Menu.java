@@ -158,7 +158,7 @@ A[j+1]=aux;
                 + " 2) Insercion \n ;"
                 + "3) Seleccion \n;"
                 + " 4)Shell \n;"
-                + " 5)Quicksort"
+                + " 5)Quicksort\n;"
                 + " 6)monticulo \n;"));
         Menu objeto= new Menu();     
         
